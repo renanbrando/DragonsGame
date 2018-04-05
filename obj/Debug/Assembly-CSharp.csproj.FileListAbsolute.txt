@@ -1,3 +1,4 @@
+C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\Assembly-CSharp.dll
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\Assembly-CSharp.pdb
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\nunit.framework.dll
@@ -63,6 +64,5 @@ C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEditor.SpatialTrackin
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEditor.VR.xml
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
-C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.dll
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.pdb

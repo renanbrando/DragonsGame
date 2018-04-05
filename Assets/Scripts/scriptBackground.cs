@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class scriptBackground : MonoBehaviour {
- 
+
 	public float velocidade;
 	public float posicaoInicial, posicaoFinal;
 

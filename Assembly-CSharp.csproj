@@ -52,7 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\scriptBackground.cs" />
+     <Compile Include="Assets\Scripts\scriptEnemy.cs" />
+     <Compile Include="Assets\Scripts\scriptExplotion.cs" />
+     <Compile Include="Assets\Scripts\scriptFire.cs" />
      <Compile Include="Assets\Scripts\scriptPlayer.cs" />
+     <Compile Include="Assets\Scripts\scriptShooting.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
