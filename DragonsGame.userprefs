@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\scriptExplotion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\scriptEnemy.cs">
     <Files>
       <File FileName="Assets\Scripts\scriptBackground.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\scriptFire.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\scriptFire.cs" Line="14" Column="34" />
       <File FileName="Assets\Scripts\scriptPlayer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\scriptShooting.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\scriptEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\scriptExplotion.cs" Line="9" Column="30" />
+      <File FileName="Assets\Scripts\scriptEnemy.cs" Line="29" Column="26" />
+      <File FileName="Assets\Scripts\scriptExplotion.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

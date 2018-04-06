@@ -21,15 +21,14 @@ public class scriptEnemy : MonoBehaviour {
 	} 
 
 	void OnCollisionEnter2D(Collision2D col){
-		Debug.Log ("test OnCollisionEnter2D");
-		Debug.Log (col.gameObject.tag.ToLower());
-		Debug.Log (life);
 		if (col.gameObject.tag.ToLower() == "fire") {
 			life--;
 			if (life < 1) {
 				PlayExplotion (); 
+				Destroy (col.gameObject);
+				Destroy (gameObject);
+			} else {
 				Destroy(col.gameObject);
-				Destroy(gameObject);
 			}
 		}
 	}
