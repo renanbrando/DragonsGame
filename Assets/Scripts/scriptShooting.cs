@@ -13,13 +13,13 @@ public class scriptShooting : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonUp("Fire1")) {
+        if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Jump")) {
 			Instantiate (fireShoot, transform.position, transform.rotation);
 		}
 	}
 
 	IEnumerator fire(){
-		if (Input.GetButtonUp("Fire1")) {
+        if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Jump")) {
 			Instantiate (fireShoot, transform.position, transform.rotation);
 		}
 		yield return new WaitForSeconds (0.1f);

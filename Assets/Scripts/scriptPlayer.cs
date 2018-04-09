@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scriptPlayer : MonoBehaviour {
 
 	//Animator animator;
 
 	public float speed;
+    public int life;
 	float move_x;
-	public int vidas;
 	float move_y; 
 	//SpriteRenderer spriteRenderer;
 	//Transform spawm_Fire;
@@ -51,8 +52,19 @@ public class scriptPlayer : MonoBehaviour {
 		}
 	}
 */
-	void OnCollisionEnter2D(Collision2D coll){
-		//Debug.Log ("bateu");
+	void OnCollisionEnter2D(Collision2D col){
+        if (col.gameObject.CompareTag("Enemy")){
+            life--;
+            if (life < 1){
+                gameOver(); 
+            }
+            Destroy(col.gameObject);
+        }
 	}
+
+    // function that ends the game and goes to menu
+    void gameOver(){
+        SceneManager.LoadScene("menu-scene");
+    }
 
 }

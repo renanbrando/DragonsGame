@@ -6,18 +6,21 @@ public class scriptEnemy : MonoBehaviour {
 
 	public float life;
 	public float interval;
-	public GameObject enemyPrefab;
 	public GameObject explotionGo;
+    public GameObject arrow;
+    public Animator anim;
+    private float lastShoot = 0;
 
 	// Use this for initialization
-	IEnumerator Start () {
-		Instantiate (enemyPrefab);
-		yield return new WaitForSeconds (interval);
-		StartCoroutine (Start ());
-	}
+    void Start () {
+        
+    }
+
 	// Update is called once per frame
 	void Update () {
-
+        if (Time.time > lastShoot + 3){
+            shoot();
+        }
 	} 
 
 	void OnCollisionEnter2D(Collision2D col){
@@ -33,6 +36,14 @@ public class scriptEnemy : MonoBehaviour {
 		}
 	}
 
+    //function that shoots an arrow
+    void shoot(){
+        Instantiate(arrow);
+        anim.SetTrigger("shooting");
+        arrow.transform.position = transform.position + new Vector3(-1,0);
+
+        this.lastShoot = Time.time;
+    }
 
 	//function to instantiate the explotion
 	void PlayExplotion(){
