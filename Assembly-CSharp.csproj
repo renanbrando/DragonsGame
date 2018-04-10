@@ -51,12 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\scriptArrow.cs" />
      <Compile Include="Assets\Scripts\scriptBackground.cs" />
      <Compile Include="Assets\Scripts\scriptEnemy.cs" />
      <Compile Include="Assets\Scripts\scriptExplotion.cs" />
      <Compile Include="Assets\Scripts\scriptFire.cs" />
+     <Compile Include="Assets\Scripts\scriptMenu.cs" />
      <Compile Include="Assets\Scripts\scriptPlayer.cs" />
      <Compile Include="Assets\Scripts\scriptShooting.cs" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>C:/ICHIGO/FIAP/Unity_games/DragonsGame/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

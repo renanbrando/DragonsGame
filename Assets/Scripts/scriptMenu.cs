@@ -19,7 +19,6 @@ public class scriptMenu : MonoBehaviour {
     {
         mainMenu.enabled = false;
         optionsMenu.enabled = true;
-
     }
 
     public void Return()
@@ -39,7 +38,6 @@ public class scriptMenu : MonoBehaviour {
         if (PlayerPrefs.GetInt("gameSound", 1) == 1)
         {
             stopMusic();
-
         }
         else
         {
