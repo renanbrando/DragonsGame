@@ -66,3 +66,4 @@ C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEditor.VR.xml
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.dll
 C:\ICHIGO\FIAP\Unity_games\DragonsGame\obj\Debug\Assembly-CSharp.pdb
+C:\ICHIGO\FIAP\Unity_games\DragonsGame\Temp\bin\Debug\Facebook.Unity.Settings.dll
