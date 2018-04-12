@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class scriptPlayer : MonoBehaviour {
-
+	public Rigidbody2D rb;
 	Animator animator;
 	public float speed;
     public int life;
 	private float move_x;
 	private float move_y;
-	private float timeToLoadScene = 3;
+	private float timeToLoadScene = 2;
+	public float waitFire;
+
    
 	// Use this for initialization
 	void Start () {
@@ -29,7 +31,9 @@ public class scriptPlayer : MonoBehaviour {
         if (col.gameObject.CompareTag("Enemy")){
             life--;
             if (life < 1){
+				
 				animator.SetBool ("isDeath", true);
+				rb.gravityScale = 1;
 				Invoke("GoToGameOver", timeToLoadScene); 
             }
             Destroy(col.gameObject);

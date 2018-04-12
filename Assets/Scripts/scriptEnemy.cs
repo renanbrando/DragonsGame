@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class scriptEnemy : MonoBehaviour {
 
-	public float life;
+	public int life;
 	public float interval;
 	public GameObject explotionGo;
     public GameObject arrow;
     public Animator anim;
     private float lastShoot = 0;
+	public bool death;
+	public int currentlife;
 
 	// Use this for initialization
     void Start () {
-        
+		currentlife = life;
     }
 
 	// Update is called once per frame
@@ -29,7 +31,10 @@ public class scriptEnemy : MonoBehaviour {
 			if (life < 1) {
 				PlayExplotion (); 
 				Destroy (col.gameObject);
-				Destroy (gameObject);
+				gameObject.SetActive (false);
+				life = currentlife;
+
+				//Destroy (gameObject);
 			} else {
 				Destroy(col.gameObject);
 			}
