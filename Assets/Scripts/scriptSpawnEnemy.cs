@@ -11,15 +11,15 @@ public class scriptSpawnEnemy : MonoBehaviour {
 	int count = 0;
 	int index;
 	int a = 1;
-	float timecount = 1.0f ;
+	float timecount = 1.0f;
 
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < spawn.Length; i++) {
 			warior[i] = Instantiate (WariorPrefab, spawn[i].position, spawn[i].rotation) as GameObject;
-			index = i;
 
 		}
+
 	}
 	
 	// Update is called once per frame
@@ -29,16 +29,13 @@ public class scriptSpawnEnemy : MonoBehaviour {
 		
 		}
 	void wariorDeath(){
-		if (warior [1].activeInHierarchy == false && warior[0].activeInHierarchy == false) {
-			warior [1].SetActive(true);
-			warior [0].SetActive(true);
+		if (warior[0].activeInHierarchy == false) {
+			for (int i = 0; i < warior.Length; i++) {
+					warior[i].SetActive(true); 
+			}
+		}
+		
 		}
 
-		}
-	void varrer (){
-	}
-
-
-		}
-		//}
-
+}
+	
