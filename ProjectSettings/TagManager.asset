@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - Enemy
   - Arrow
+  - BornZone
+  - DeathZone
   layers:
   - Default
   - TransparentFX
