@@ -58,15 +58,4 @@ public class scriptMenu : MonoBehaviour {
         music.Pause();
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

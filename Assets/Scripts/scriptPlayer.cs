@@ -13,7 +13,6 @@ public class scriptPlayer : MonoBehaviour {
 	private float timeToLoadScene = 2;
 	public float waitFire;
 
-   
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator>();
@@ -21,23 +20,42 @@ public class scriptPlayer : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		//Move o Dragao
-		move_y = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
-		move_x = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
-		transform.Translate (move_x, move_y, 0.0f);	 
+		Movement ();
 	}
 
+	void Movement()
+	{
+		move_y = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
+		move_x = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
+
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			transform.Translate (Vector2.right * speed * Time.deltaTime);	
+			transform.eulerAngles = new Vector2(0, 0);
+		}
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			transform.Translate (Vector2.right * speed * Time.deltaTime);	
+			transform.eulerAngles = new Vector2(0, 180);
+		}
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			transform.Translate (move_x, move_y, 0.0f);	
+		}
+		if (Input.GetKey (KeyCode.DownArrow)) {
+			transform.Translate (move_x, move_y, 0.0f);
+		}
+	}
+  
 	void OnCollisionEnter2D(Collision2D col){
-        if (col.gameObject.CompareTag("Enemy")){
+		if (col.gameObject.CompareTag("Lance") || col.gameObject.CompareTag("Enemy")){
             life--;
-            if (life < 1){
-				
+            if (life < 1){				
 				animator.SetBool ("isDeath", true);
 				rb.gravityScale = 1;
 				Invoke("GoToGameOver", timeToLoadScene); 
             }
-            Destroy(col.gameObject);
-        }
+			if (col.gameObject.CompareTag("Lance"))
+            	Destroy(col.gameObject);
+		} 
+ 
 	}
  
     // function that ends the game and goes to menu
