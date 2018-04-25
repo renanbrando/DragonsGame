@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class scriptPlayer : MonoBehaviour {
 	public Rigidbody2D rb;
 	Animator animator;
 	public float speed;
+    public Text lifeText;
     public int life;
 	private float move_x;
 	private float move_y;
@@ -20,6 +22,7 @@ public class scriptPlayer : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        UpdateLife();
 		Movement ();
 	}
 
@@ -43,6 +46,12 @@ public class scriptPlayer : MonoBehaviour {
 			transform.Translate (move_x, move_y, 0.0f);
 		}
 	}
+
+    void UpdateLife(){
+        if (this.life >= 0){
+            this.lifeText.text = this.life.ToString();  
+        }
+    }
   
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.CompareTag("Lance") || col.gameObject.CompareTag("Enemy")){

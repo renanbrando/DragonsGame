@@ -336,16 +336,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\scriptArrow.cs" />
     <Compile Include="Assets\Scripts\scriptBackground.cs" />
-    <Compile Include="Assets\Scripts\scriptEnemy.cs" />
+    <Compile Include="Assets\Scripts\scriptEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\scriptExplotion.cs" />
     <Compile Include="Assets\Scripts\scriptFire.cs" />
+    <Compile Include="Assets\Scripts\ScriptInvoke.cs" />
+    <Compile Include="Assets\Scripts\scriptLance.cs" />
+    <Compile Include="Assets\Scripts\scriptLanceThrowing.cs" />
     <Compile Include="Assets\Scripts\scriptMenu.cs" />
     <Compile Include="Assets\Scripts\scriptPlayer.cs" />
     <Compile Include="Assets\Scripts\scriptShooting.cs" />
-    <Compile Include="Assets\Scripts\scriptSpawnEnemy.cs" />
-    <Compile Include="Assets\scriptSpawn.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
